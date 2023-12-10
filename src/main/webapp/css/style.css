@@ -1,0 +1,519 @@
+@charset "ISO-8859-1";
+
+*{
+	font-family: 'Arial', sans-serif;
+}
+
+:root{
+--color-1: #D6EAF8; 
+}
+
+body{
+	background-color: #E5E8E8;
+}
+
+a{
+  text-decoration: none;	
+}
+
+.menu {
+	display: flex;	
+	flex-direction: column;
+	align-items:center;
+	margin-top: 1rem;
+}
+
+.menuIndex {
+	display: flex;	
+	flex-direction: column;
+	align-items:center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.menuIndex form{
+	margin-top: 0;
+}
+
+
+.inputIndex input{
+	border-radius: 5px;
+	font-size: 1rem;
+	padding: 0.5rem;
+}
+
+.btnIniciarSesion{
+	display: flex;
+	justify-content: center;
+}
+
+.opcionesIndex{
+	display: flex;
+	justify-content: space-between;
+}
+
+.opcionesIndex a {
+	margin-top: 1rem;
+	padding: 0.3rem;
+	font-size: 1.1rem;
+}
+
+.opcionesIndex a:link, .opcionesIndex a:visited {
+	color: green;
+}
+
+.opcionesIndex a:hover, .opcionesIndex a:active {
+  text-decoration: underline;
+}
+
+.opcionesMenu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+	margin-top: 2rem;
+	width:15rem;
+}
+
+.opcionesMenu a:link, .opcionesMenu a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 1rem 2rem;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  
+}
+
+.opcionesMenu a:hover, .opcionesMenu a:active {
+  background-color: green;
+  color: white;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color:aqua;
+}
+
+.tablaReportes{
+ 	margin-top: 1rem;
+   width: 90vw;
+   border: 1px solid #000;
+}
+.tablaReportes th {
+   border: 1px solid #000;
+}
+
+.tabla-movimientos{
+	margin:auto;
+	width:1000px;
+}
+
+.select {
+ display: block;
+ font-family: 'Arial', sans-serif;
+ font-weight: 400;
+ color: #444;
+ line-height: 1.3;
+ padding: .4em 1.4em .3em .8em;
+ width: 400px;
+ max-width: 100%; 
+ box-sizing: border-box;
+ margin: 0;
+ border: 1px solid #aaa;
+ box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
+ border-radius: .3em;
+ -moz-appearance: none;
+ -webkit-appearance: none;
+ appearance: none;
+ background-color: #fff;
+ background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+   linear-gradient(to bottom, #ffffff 0%,#f7f7f7 100%);
+ background-repeat: no-repeat, repeat;
+ background-position: right .7em top 50%, 0 0;
+ background-size: .65em auto, 100%;
+  max-width: max-content; 
+}
+
+.select::-ms-expand {
+ display: none;
+}
+
+.select:hover {
+ border-color: var(--color-1);
+}
+
+.select:focus {
+ border-color: var(--color-1);
+ box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+ box-shadow: 0 0 0 3px -moz-mac-focusring;
+ color: #222; 
+ outline: none;
+}
+
+.select option {
+ font-weight:normal;
+}
+
+.Cuenta{
+	width:650px;
+	margin:auto;
+	background-color: #f2f2f2;
+	padding:15px;
+	border-radius:10px;
+	margin-top:20px;
+	margin-bottom:20px;
+	display:flex;
+}
+
+.Cuenta-Tipo{
+	background-color: var(--color-1);
+    padding: 10px 12px;
+    color: #fff;
+    font-size: 24px;
+    float: left;
+    height: 72px;
+    margin-right: 16px;
+    min-width: 72px;
+    display:flex;
+    text-align: center;
+    border-radius:10px;
+    justify-content: center
+}
+
+.Cuenta-Tipo label{
+  align-self: center;
+}
+
+.Cuenta-Detalle{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+}
+
+.Cuenta-Detalle label{
+	margin:0;
+}
+
+.Cuenta-Detalle label:first-child{
+	font-size:2rem;
+	weight:bolder;
+}
+
+.tabla-transferencias{
+	margin:auto;
+	width:1000px;
+}
+
+.ABM {
+	display: flex;	
+	flex-direction: column;
+	align-items:center;
+}
+
+.inforPer{
+	display: flex;	
+	flex-direction: column;
+	align-items:center;	
+	
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+	margin-top: 2rem;
+	width: 100%;
+}
+
+.form fieldset{
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	
+}
+
+.inputForm {
+	display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0.5rem;
+}
+
+.button {
+	display: flex;
+	flex-direction: row-reverse;
+
+}
+
+#btnIniciarSesion {
+	background-color: #508BFC;
+  	color: white;
+  	border-radius: 7px;
+  	border: none;
+ 	padding: 0.2rem 1rem;
+}
+
+#btnIniciarSesion {
+	margin-top: 1rem;
+	padding: 0.4rem 1rem;
+	width: 100%;
+}
+
+#btnRegistrar:hover, #btnRegistrar:active,
+#btnIniciarSesionr:hover, #btnIniciarSesion:active,
+ {
+  background-color: white;
+  color: black;
+}
+
+.tablaClientes {
+   margin-top: 1rem;
+   width: 90vw;
+   border: 1px solid #000;
+}
+
+.tablaClientes th {
+   border: 1px solid #000;
+}
+
+.tablaDatos{
+  margin-top: 1rem;
+  width: 50vw;
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+}
+
+.tablaDatos th, .tablaDatos td {
+   width: 25%;
+   text-align: left;
+   vertical-align: top;
+   border: 1px solid #000;
+   border-spacing: 0;
+}
+.tablaCuentas{
+   margin-top: 1rem;
+   width: 70vw;
+   border: 1px solid #000;
+}
+
+.tablaCuentas th, .tablaCuentas td {
+   width: 25%;
+   text-align: left;
+   vertical-align: top;
+   border: 1px solid #000;
+   border-spacing: 0;
+}
+
+
+.tablaMovimientos {
+   margin-top: 1rem;
+   width: 70vw;
+   border: 1px solid #000;
+}
+
+
+dl
+{
+	text-align:left;
+}
+
+.selectorCuentas {  /*Selector de cuentas de gestionarCuentas.jsp*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.selectorCuentas label{ 
+ 	font-size:2rem;
+ 	color: var(--color-1);
+}
+
+.selectorCuentas select{ 
+	padding: 3px;
+	margin: 0 1rem;
+}
+
+
+#btnSeleccionar:hover, #btnSeleccionar:active {
+	font-weight: 700;
+}
+
+.btnSeleccionar {
+	background-color: green ; /* #008000 */
+  	color: white;
+  	border-radius: 7px;
+  	border: 2px solid green;
+ 	padding: 0.2rem 1rem;
+}
+
+.btnSeleccionar:hover, #btnSeleccionar:active {
+	font-weight: 700;
+}
+
+.eleccion-prestamos{
+	margin: auto;
+    text-align: center;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.paginado{	
+	display: flex; 
+	align-items: center; 
+	margin: 1rem 0; 
+	gap: 1rem; 
+	padding: 0.5rem 1rem;
+}
+
+.paginado a {
+	font-size: 1.1rem;
+}
+
+.paginado a:link, .paginado a:visited {
+	color: green;
+}
+
+.paginado a:hover, .paginado a:active {
+  text-decoration: underline;
+}
+
+
+.logged {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	gap: 0.5rem;
+
+}
+
+.volver{
+	align-self: self-end;
+	margin-right: 2rem;
+}
+
+.volverIcon {
+	margin-right: 5px;
+}
+
+.volver:link, .volver:visited {
+	color: inherit;
+}
+
+.volver:hover, .volver:active {
+	color: #F0F0F0;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li {
+    margin-right: 5px;
+}
+
+.pagination li a {
+    display: block;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    text-decoration: none;
+    color: #333;
+    border-radius: 3px;
+}
+
+.pagination li.active a {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.dataTables_filter input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+.dataTables_length,
+  .dataTables_filter {
+    display: inline-block;
+    margin-bottom: 10px; 
+    margin-right: 5px/* Ajusta el espacio entre los elementos si es necesario */
+  }
+
+  /* Opcional: ajustes de estilo para los elementos individuales */
+  .dataTables_length select,
+  .dataTables_filter input[type="search"] {
+    /* Agrega estilos según tus preferencias */
+    /* Por ejemplo, ajusta el tamaño de la fuente, el color, etc. */
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  
+  
+.dataTables_info {
+  display: none;
+}
+
+/* Estilos para la paginación */
+.dataTables_paginate {
+  margin-top: 15px; /* Espacio entre la tabla y la paginación */
+}
+
+.dataTables_paginate a {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 55px;
+  
+}
+
+.dataTables_paginate a.current {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+  
+}
+
+#miTabla_info {
+    display: none;
+}
